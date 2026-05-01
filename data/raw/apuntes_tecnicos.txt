@@ -1,0 +1,57 @@
+Python es un lenguaje de programación interpretado y de alto nivel.
+
+Una función en Python se define con la palabra clave def.
+
+Django es un framework web de Python que permite crear aplicaciones web de forma rápida.
+
+Una migración en Django sirve para aplicar cambios de los modelos a la base de datos.
+
+SQL es un lenguaje utilizado para consultar y modificar bases de datos relacionales.
+
+Una API REST permite comunicar aplicaciones mediante peticiones HTTP como GET, POST, PUT y DELETE.
+
+na API REST (Representational State Transfer) es, en términos sencillos, el "traductor" o mensajero que permite que dos aplicaciones se comuniquen entre sí a través de internet utilizando el protocolo HTTP.
+
+Es el estándar que permite que, por ejemplo, la aplicación de Amazon en tu teléfono le pida a los servidores de Amazon la lista de tus pedidos.
+
+¿Cómo funciona?
+Se basa en una relación Cliente-Servidor. El cliente (tu navegador o app) envía una solicitud a una URL específica, y el servidor responde con los datos (generalmente en formato JSON).
+
+Para que sea considerada "RESTful", debe seguir ciertas reglas, como:
+
+Sin estado (Stateless): Cada petición debe contener toda la información necesaria para entenderse; el servidor no recuerda nada de peticiones anteriores.
+
+Uso de métodos HTTP: Utiliza verbos específicos para cada acción:
+
+GET: Leer datos.
+
+POST: Crear datos.
+
+PUT: Actualizar datos.
+
+DELETE: Eliminar datos.
+
+Errores HTTP más comunes
+Los códigos de estado HTTP son la forma en que el servidor te dice qué pasó con tu petición. Se dividen en rangos, siendo los 400 (errores del cliente) y 500 (errores del servidor) los más importantes a conocer:
+
+Son fallos en la petición que enviaste:
+
+400 Bad Request: La solicitud está mal formada (error de sintaxis o falta un dato obligatorio).
+
+401 Unauthorized: No estás autenticado. El servidor necesita saber quién eres.
+
+403 Forbidden: El servidor sabe quién eres, pero no tienes permiso para ver ese recurso específico.
+
+404 Not Found: El clásico. El recurso o la URL que buscas no existe.
+
+429 Too Many Requests: Has enviado demasiadas peticiones en poco tiempo (límite de velocidad).
+
+El problema no eres tú, es el servidor:
+
+500 Internal Server Error: Un error genérico. Algo se rompió en el código del servidor y no sabe explicar qué fue.
+
+502 Bad Gateway: El servidor que actúa como puente recibió una respuesta inválida de otro servidor interno.
+
+503 Service Unavailable: El servidor está sobrecargado o en mantenimiento temporal.
+
+504 Gateway Timeout: El servidor tardó demasiado tiempo en responder y la conexión se cerró.
